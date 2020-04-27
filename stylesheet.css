@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(top_cover.png);
+  background-size: cover;
+  color: black;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 10px;
+}
+
+.header-right {
+  float: left;
+}
+
+.header-left {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.lesson-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.home-dts{
+  color : white;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 20%;
+}
+.kelompok {
+ text-align : left;
+margin : 0 auto;
+}
+
+.lesson a{
+  cursor : pointer;
+}
+.lesson a:hover {
+color : black;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #b3aeb5;
+}
+.text-kelompok {
+  width: 80%;
+  font-size: 16px;
+  color: #b3aeb5;
+  
+}
+.text-dts{
+  width: 100%;
+  font-size: 18px;
+  color: black;
+  text-align: justify;
+}
+.garisbatas {
+width: lesson-wrapper;
+border-bottom: 1px solid #b3aeb5;
+margin-bottom: 10px;
+}
+.heading h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+.message a{
+color : white;
+}
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+
+
+.DTS{
+  color : white;
+background-image: url(cover_dts.png);
+background-size: cover;
+
+}
+
+.pesawat{
+
+   width: 100px;
+  height: 100px; 
+  position: relative;
+  /* background-color: red; */
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes example {
+  0%   { left:25%; top:0px;}
+  25%  { left:75%; top:0px;}
+  50%   { left:25%; top:0px;}
+  25%  { left:75%; top:0px;}
+}
+.contact-form {
+  padding-top: 100px;
+  padding-left: 5%;
+  text-align: left;
+}
+input, textarea {
+  width : 400px;
+  margin-top : 10px;
+  margin-bottom : 30px;
+  padding : 20px;
+  font-size : 18px;
+  border : 1px solid #dee7ec;
+  
+}
+
+
+<style>
+
+.dropbtn {
+
+  color: white;
+  /* padding: 21px; */
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+  display : none;
+  float: right;
+
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  color: white;
+  margin : 20px;
+ display: none; 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color : yellow;
+}
+</style>
